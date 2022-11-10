@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客-关于我</title>
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/pages/profile.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/profile.js"></script>
+    <link rel="stylesheet" href="../lib/css/swiper.min.css">
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <nav>
+            <ul>
+                <div class="touxiang">
+                    <img src="../images/touxiang.jpg" alt="">
+                </div>
+                <li>
+                    <i class="iconfont icon-wodeziliao"></i> 我的资料
+                </li>
+                <li>
+                    <i class="iconfont icon-xingquaihao"></i> 我的爱好
+                </li>
+                <li>
+                    <i class="iconfont icon-31daipingjia"></i> 自我评价
+                </li>
+                <li>
+                    <i class="iconfont icon-zuopin"></i> 我的技能
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="content_zhiliao clear-fix" style="display: block;">
+                <ul class="zhiliao_left">
+                    <li><i class="iconfont icon-xingming"></i>姓名：李文轩</li>
+                    <li><i class="iconfont icon-sex"></i>性别：男</li>
+                    <li><i class="iconfont icon-nianling"></i>年龄：20</li>
+                    <li><i class="iconfont icon-xueli"></i>学历：本科</li>
+                    <li><i class="iconfont icon-QQ1"></i>QQ：125423554</li>
+                    <li><i class="iconfont icon-shengao"></i>身高：182cm</li>
+                    <li><i class="iconfont icon-icontz"></i>体重：70kg</li>
+                    <li><i class="iconfont icon-xiexing"></i>血型：B型</li>
+                </ul>
+                <ul class="zhiliao_right">
+                    <li><i class="iconfont icon-chushengriqi"></i>出生日期：2002-10-05</li>
+                    <li><i class="iconfont icon-xuexiao_xuexiaoxinxi"></i>学校：怀化学院</li>
+                    <li><i class="iconfont icon-zhuanyezhishijineng"></i>专业：本科</li>
+                    <li><i class="iconfont icon-chengjijidian"></i>绩点：125423554</li>
+                    <li><i class="iconfont icon-yingyushuiping"></i>英语水平：182cm</li>
+                    <li><i class="iconfont icon-gitee"></i>码云仓库：https://gitee.com/LWX2002</li>
+                    <li><i class="iconfont icon-csdn"></i>CSDN博客：https://blog.csdn.net/LIWENXUAN88</li>
+                    <li><i class="iconfont icon-youxiang"></i>邮箱：357463@qq.com</li>
+                </ul>
+            </div>
+            <div class="content_aihao" style="display: block;">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/profile/tingyingyue.jpg" alt="">
+                            <p>边听音乐边学习难道不快乐嘛</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/profile/erchiyuan.jpg" alt="">
+                            <p>二次元它不香吗</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/profile/haizeiwang.jpg" alt="">
+                            <p>谁还不是一个想成为海贼王的男人！！</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/profile/yumaoqiu.jpg" alt="">
+                            <p>学习之余打打羽毛球，真的是好幸福的！！</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="content_pingjia">
+                <ul>
+                    <li>一个对一切未知事物都充满好奇心的人</li>
+                    <li>一个力求完美的人，无论要付出多大的精力</li>
+                    <li>一个爱折腾，爱改变，爱追寻新技术的计科人</li>
+                </ul>
+            </div>
+            <div class="content_zhineng">
+                我的技能
+            </div>
+        </div>
+    </section>
+    <script src="../lib/js/swiper.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: true,
+            delay: 1500,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var content_aihao = document.querySelector(".content_aihao");
+        content_aihao.style.display = "none";
+    </script>
+    <footer></footer>
+
+</body>
+
+</html>

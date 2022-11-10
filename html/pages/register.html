@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客-注册</title>
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/pages/register.css">
+    <!-- <link rel="stylesheet" href="../css/pages/common.css"> -->
+    <!-- <script src="../js/common.js"></script> -->
+    <script src="../js/register.js"></script>
+</head>
+
+<body>
+
+    <h1>唐长老都取到经了，你还不努力</h1>
+    <div class="biaodan">
+        <h3><a href="index.html">我的个人博客-注册</a></h3>
+        <div id="message"></div>
+        <form action="#" method="post" name="register" id="register">
+            <table>
+                <tr>
+                    <th>用户名：</th>
+                    <td>
+                        <input type="text" placeholder="请输入姓名" id="username" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码：</th>
+                    <td>
+                        <input type="password" placeholder="请输入密码" id="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>确认密码：</th>
+                    <td>
+                        <input type="password" placeholder="请确认密码" id="password2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>性别：</th>
+                    <td>
+                        <label for="nan">男<input type="radio" name="sex" id="nan" value="nan" checked></label>&nbsp;
+                        <label for="nv">女<input type="radio" name="sex" id="nv" value="nv"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>出生日期：</th>
+                    <td>
+                        <input type="date" name="birthday" id="birthday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>目前学历：</th>
+                    <td>
+                        <select name="xueli" id="xuli">
+                        <option value="">--请选择--</option>
+                        <option value="dazhuan">大专</option>
+                        <option value="benke">本科</option>
+                        <option value="yanjiushen">研究生</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>个人兴趣：</th>
+                    <td>
+                        <label for="daqiu"><input type="checkbox" name="daqiu" id="daqiu">打球</label>
+                        <label for="bashan"><input type="checkbox" name="bashan" id="bashan">爬山</label>
+                        <label for="baobu"><input type="checkbox" name="baobu" id="baobu">跑步</label>
+                        <label for="dayouxi"><input type="checkbox" name="dayouxi" id="dayouxi">打游戏</label>
+                        <label for="qita"><input type="checkbox" name="qita" id="qita">其他</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>个人邮箱：</th>
+                    <td>
+                        <input type="email" placeholder="请输入邮箱" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>自我介绍：</th>
+                    <td>
+                        <textarea name="jieshao" id="jieshao" cols="30" rows="10" placeholder="自我介绍" style="resize: none;" required></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align: center;">
+                <input type="submit" value="提交" id="tijiao">
+                <input type="reset" value="重置" id="congzhi">
+            </div>
+        </form>
+    </div>
+
+    <div class="box clear-fix">
+        <div class="tu1"></div>
+        <div class="tu2"></div>
+        <div class="tu3"></div>
+        <div class="tu4"></div>
+    </div>
+</body>
+
+</html>

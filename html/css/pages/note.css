@@ -1,0 +1,94 @@
+section {
+    padding: 20px 0px;
+}
+
+.sp {
+    width: 580px;
+    margin: 0 auto;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial;
+    padding: 0.5em 2em 0.55em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    background-color: #fbfbfb;
+    color: #808080;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+.notes {
+    /* height: 1000px; */
+    background-color: rgba(251, 251, 251, .6);
+    margin-top: 40px;
+}
+
+.notes .notes_left {
+    float: left;
+    /* background-color: pink; */
+    width: 20%;
+    height: 500px;
+}
+
+.notes .notes_left li {
+    width: 100%;
+    height: 30px;
+    /* background-color: #fff; */
+    margin-bottom: 3px;
+    line-height: 30px;
+    padding: 5px 0 5px 10px;
+    transition: all .3s ease;
+}
+
+.notes .notes_left li:hover {
+    padding-left: 20px;
+}
+
+.notes .notes_left li a {
+    display: block;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    border-left: 3px solid green;
+}
+
+.notes .notes_right {
+    float: left;
+    /* background-color: #ffffff; */
+    /* height: 500px; */
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.notes .notes_right li {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    transition: all .5s ease;
+}
+
+.notes .notes_right li:hover {
+    padding-left: 20px;
+}
+
+.notes .notes_right li h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.notes .notes_right li p {
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+}

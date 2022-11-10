@@ -1,0 +1,179 @@
+@import url(./common.css);
+
+/* section::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+section {
+    height: 1800px;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(73, 76, 116, .6);
+    border-radius: 10px;
+}
+
+.touxiang {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: pink; */
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    /* background-color: pink; */
+    padding: 20px;
+}
+
+nav ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.6s;
+}
+
+nav ul li:hover {
+    background-color: rgba(74, 80, 166, 0.6);
+}
+
+nav ul li i {
+    margin-right: 3px;
+}
+
+[class^="content_"] {
+    border: 2px dashed #B1B1B1;
+    display: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    /* height: 500px; */
+    transform: translateX(800px);
+    animation: guohuiping 0.5s ease forwards;
+}
+
+@keyframes guohuiping {
+    0% {
+        transform: translateX(800px);
+    }
+    /* 80% {
+        transform: translateX(0px);
+    } */
+    80% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+[class^="zhiliao_"] {
+    width: 50%;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+[class^="zhiliao_"] li {
+    margin: 10px;
+}
+
+.zhiliao_left {
+    float: left;
+}
+
+.zhiliao_right {
+    float: right;
+}
+
+.content_aihao {
+    position: relative;
+    height: 350px;
+    background: rgba(248, 248, 248, 0.1);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.content_pingjia ul li {
+    list-style-type: circle;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-bottom: green 2px dashed;
+    box-shadow: 3px 3px 1px #302f31;
+    background-color: rgba(157, 157, 157, .7);
+}
+
+
+/*swiper start*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(117, 225, 233, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+}
+
+.swiper-slide p {
+    position: absolute;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #eee;
+    width: 100%;
+    top: 190px;
+    left: 0;
+    text-align: center;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1);
+}
+
+
+/*swiper end*/

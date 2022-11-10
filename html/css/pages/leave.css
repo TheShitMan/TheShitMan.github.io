@@ -1,0 +1,70 @@
+section {
+    padding: 50px;
+    min-height: 80vh;
+}
+
+.leave {
+    width: 100%;
+    background-color: rgba(253, 252, 252, .5);
+    padding: 30px;
+    border-radius: 10px;
+    /* color: #fff; */
+    /* text-align: center; */
+    box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.3);
+    transform: translateX(-800px);
+    animation: ttt 0.8s ease forwards;
+}
+
+@keyframes ttt {
+    0% {
+        transform: translateX(-800px);
+    }
+    90% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(168, 162, 162);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255, .3);
+    color: rgb(123, 121, 121);
+    letter-spacing: 2px;
+}
+
+#fabiao {
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(91, 161, 235);
+    letter-spacing: 2px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    float: right;
+}
+
+#liuyan_message {
+    margin-top: 20px;
+}
+
+#liuyan_message li {
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255, .5);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    letter-spacing: 2px;
+    animation: ttt 0.8s ease forwards;
+}
+
+#liuyan_message li a {
+    float: right;
+}
